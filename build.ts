@@ -10,6 +10,12 @@ import * as filesize from 'rollup-plugin-filesize';
 import * as sourcemaps from 'rollup-plugin-sourcemaps';
 import { Observable } from 'rxjs';
 
+// TODO: set check of windows/unix and make path to NGC in one file
+import * as path from 'path';
+
+import * as os from 'os';
+
+
 const copyAll: ((s: string, s1: string) => any) = Observable.bindCallback(
   copyfiles,
 );

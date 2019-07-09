@@ -6,9 +6,9 @@ import {
   NavigationStart,
   Router,
 } from '@angular/router';
-import { filter } from 'rxjs/operators/filter';
+import { filter } from 'rxjs/operators';
 
-import { NgxAnalytics, AppInsightsSettings } from 'ngx-analytics';
+import { AppInsightsSettings, NgxAnalytics } from 'ngx-analytics';
 
 declare const appInsights: Microsoft.ApplicationInsights.IAppInsights;
 
