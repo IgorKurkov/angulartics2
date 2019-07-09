@@ -83,7 +83,7 @@
   "bugs": {
     "url": "http://github.com/SnakeByteDevelopment/ngx-analytics/issues"
   },
-  "repository": "SnakeByteDevelopment/ngx-analytics",
+  "repository": "IgorKurkov/ngx-analytics",
   "engines": {
     "node": ">=8"
   },
