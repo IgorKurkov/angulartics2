@@ -1,12 +1,13 @@
 {
-  "name": "ngx-analytics",
-  "description": "Vendor-agnostic web analytics for Angular2 applications, based on angulartics2",
-  "homepage": "",
+  "name": "@kurkov87/ngx-analytics",
+  "version": "4.4.6",
+  "description": "Vendor-agnostic web analytics for Angular2 applications, based on angulartics2. Updated rxjs",
   "author": "Gert Pellin <pellingert@gmail.com> (http://github.com/switch87)",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "rimraf dist && ts-node build.ts",
+    "build:windows": "rimraf dist && ts-node build-windows.ts",
     "test": "ng test --single-run --code-coverage --browsers=ChromeCI",
     "test:ci": "ng test --code-coverage --single-run --no-progress --browsers=ChromeCI",
     "test:watch": "ng test",
@@ -20,6 +21,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "^8.1.0",
     "@angular/animations": "^4.4.6",
     "@angular/cdk": "2.0.0-beta.12",
     "@angular/common": "^4.4.6",
@@ -35,6 +37,7 @@
     "@uirouter/angular": "1.0.0-rc.3",
     "bootstrap": "4.0.0-beta.3",
     "core-js": "^2.5.3",
+    "path": "^0.12.7",
     "rxjs": "5.5.6",
     "zone.js": "^0.8.20"
   },
@@ -46,7 +49,7 @@
     "@types/facebook-pixel": "^0.0.19",
     "@types/fs-extra": "^5.0.0",
     "@types/google.analytics": "^0.0.36",
-    "@types/jasmine": "^2.8.4",
+    "@types/jasmine": "^2.8.8",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^9.3.0",
     "@types/segment-analytics": "^0.0.28",
@@ -65,14 +68,13 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "^5.2.2",
     "rimraf": "^2.6.2",
-    "rollup": "^0.54.0",
+    "rollup": "^0.53.3",
     "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
-    "semantic-release": "^12.2.2",
-    "travis-deploy-once": "^4.3.1",
+    "semantic-release": "^11.0.2",
     "ts-node": "^4.1.0",
-    "tslint": "^5.9.1",
-    "typescript": "2.4.x"
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
   },
   "release": {
     "branch": "master"
@@ -91,6 +93,7 @@
     }
   },
   "contributors": [
+    "Igor Kurkov <kurkov87@gmail.com> (http://github.com/IgorKurkov)",
     "João Ribeiro <jonnybgod@gmail.com> (http://github.com/JonnyBGod)",
     "Luis Farzati <lfarzati@gmail.com> (http://github.com/luisfarzati)",
     "Tim Elfelt <timelf123@gmail.com> (https://github.com/timelf123)",

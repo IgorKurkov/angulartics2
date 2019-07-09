@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 
-import { ReplaySubject } from 'rxjs/ReplaySubject';
+import { ReplaySubject } from 'rxjs';
 
 import { NgxAnalyticsSettings, DefaultConfig } from './ngx-analytics-config';
 import { EventTrack, PageTrack, UserTimings } from './ngx-analytics-interfaces';

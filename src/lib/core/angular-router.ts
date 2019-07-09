@@ -5,7 +5,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators/filter';
 import { map } from 'rxjs/operators/map';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { RouterlessTracking, TrackNavigationEnd } from './routerless';
 
 /**
