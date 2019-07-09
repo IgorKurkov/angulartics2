@@ -1,9 +1,11 @@
 {
   "name": "@kurkov87/ngx-analytics",
   "version": "4.4.6",
+  "license": "MIT",
   "description": "Vendor-agnostic web analytics for Angular2 applications, based on angulartics2. Updated rxjs",
-  "author": "Gert Pellin <pellingert@gmail.com> (http://github.com/switch87)",
+  "author": "Gert Pellin <pellingert@gmail.com> (http://github.com/switch87),  Igor Kurkov <kurkov87@gmail.com>",
   "scripts": {
+    "publ": "npm publish dist/packages-dist --access public",
     "ng": "ng",
     "start": "ng serve",
     "build": "rimraf dist && ts-node build.ts",
@@ -79,7 +81,6 @@
   "release": {
     "branch": "master"
   },
-  "license": "MIT",
   "bugs": {
     "url": "http://github.com/SnakeByteDevelopment/ngx-analytics/issues"
   },
